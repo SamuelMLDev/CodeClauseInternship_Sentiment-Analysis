@@ -1,0 +1,7 @@
+2024-10-12 19:58:39,898 - INFO - Welcome to the Sentiment Analysis Tool!
+2024-10-12 19:58:39,905 - INFO - Initialized VADER Sentiment Analyzer.
+2024-10-12 19:58:57,758 - INFO - TextBlob Analysis - Text: 'I absolutely love this new phone!' | Sentiment: Positive | Polarity: 0.3352272727272727 | Subjectivity: 0.5272727272727272
+2024-10-12 19:58:57,759 - INFO - VADER Analysis - Text: 'I absolutely love this new phone!' | Sentiment: Positive | Compound Score: 0.6989
+2024-10-12 19:58:57,760 - INFO - Saved analysis results for text: 'I absolutely love this new phone!'
+2024-10-12 19:59:23,047 - INFO - User initiated exit.
+2024-10-12 19:59:23,049 - INFO - Exiting the sentiment analysis tool.

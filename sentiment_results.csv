@@ -1,0 +1,6 @@
+Text,Sentiment,Polarity,Subjectivity
+I absolutely love this new phone!,Positive,0.3352272727272727,0.5272727272727272
+The battery life could be better.,Positive,0.5,0.5
+The battery life could be better.,Positive,0.5,0.5,Positive,0.4404
+I love soccer,Positive,0.5,0.6,Positive,0.6369
+I absolutely love this new phone!,Positive,0.3352272727272727,0.5272727272727272,Positive,0.6989
