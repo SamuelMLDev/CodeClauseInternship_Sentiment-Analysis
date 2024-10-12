@@ -48,6 +48,9 @@ Follow these steps to set up the Sentiment Analysis Tool on your local machine.
 
    ```bash
    git clone https://github.com/SamuelMLDev/CodeClauseInternship_Sentiment-Analysis.git
+   ```
+
+   **test**
 
 
 
