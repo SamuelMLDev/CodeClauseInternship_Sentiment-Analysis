@@ -7,7 +7,6 @@ Welcome to the **Sentiment Analysis Tool**! This Python-based application allows
 ## Table of Contents
 
 - [Features](#features)
-- [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
@@ -19,12 +18,7 @@ Welcome to the **Sentiment Analysis Tool**! This Python-based application allows
 - **CSV Logging:** Saves each analysis result to a CSV file for record-keeping.
 - **Session Summary:** Provides a summary of sentiments analyzed during a session.
 - **Error Handling:** Gracefully handles unexpected inputs and errors.
-  
-## Demo
 
-![Sentiment Analysis Tool Demo](demo/demo.gif)
-
-> *Note: Add a GIF or screenshot of your tool in action inside a `demo` folder for visual reference.*
 
 ## Installation
 
