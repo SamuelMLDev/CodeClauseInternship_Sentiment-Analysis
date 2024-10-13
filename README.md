@@ -10,11 +10,7 @@ Welcome to the **Sentiment Analysis Tool**! This Python-based application allows
 - [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 - [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Features
 
@@ -50,9 +46,102 @@ Follow these steps to set up the Sentiment Analysis Tool on your local machine.
    git clone https://github.com/SamuelMLDev/CodeClauseInternship_Sentiment-Analysis.git
    ```
 
-   **test**
+ **Navigate into the project directory:**
+   ```bash
+   cd CodeClauseInternship_Sentiment-Analysis
+   ```
+   
+2. **Create a Virtual Environment**
+   ```bash
+   python -m venv venv
+   ```
+3. **Activate the Virtual Envrionment**
+Windows:
+```bash
+venv\Scripts\activate
+```
+5. **Install Dependencies**
+macOS/Linux:
+```bash
+source venv/bin/activate
+```
+7. **Download NLTK Data**
+The application relies on certain NLTK datasets. Run the following commands in your terminal:
+```bash
+python
+```
+
+Once in the Python interactive shell, execute:
+
+```bash
+import nltk
+nltk.download('vader_lexicon')
+```
+
+After the download completes, exit the shell:
+```
+exit()
+```
+
+9. **Run the Application**
+
+Execute the sentiment analysis script:
+```
+python sentiment_analysis.py
+```
+Alternatively, if you're using an IDE like Visual Studio Code, you can run the script directly within the editor.
 
 
+## Usage
 
+Once the application is running, follow these steps:
+
+1. Input Text: When prompted, enter a sentence or review you wish to analyze.
+
+```bash
+Enter a sentence or review to analyze its sentiment: I absolutely love this new phone!
+```
+
+2. View Results: The tool will display sentiment analysis results from both TextBlob and VADER.
+
+```bash
+[TextBlob] Sentiment: Positive
+[TextBlob] Polarity: 0.3352272727272727
+[TextBlob] Subjectivity: 0.5272727272727272
+
+[VADER] Sentiment: Positive
+[VADER] Compound Score: 0.5
+
+Analysis results saved to 'sentiment_results.csv'.
+```
+
+3. Exit the Tool: To quit the application, type exit when prompted.
+
+```
+Copy code
+Enter a sentence or review to analyze its sentiment: exit
+
+Session Summary:
+Positive: 2
+Negative: 1
+Neutral: 0
+Error: 0
+Thank you for using the Sentiment Analysis Tool!
+```
+
+## Dependencies
+
+All required Python packages are listed in requirements.txt. Here's a summary:
+
+1. TextBlob: Simplifies text processing tasks like sentiment analysis.
+2. nltk: Natural Language Toolkit, provides tools for working with human language data.
+3. VADER: Valence Aware Dictionary and sEntiment Reasoner, optimized for sentiments expressed in social media.
+4. logging: Built-in Python module for tracking events that happen when software runs.
+
+To install dependencies manually, you can run:
+
+```bash
+pip install textblob nltk
+```
 
 
