@@ -1,0 +1,16 @@
+# Virtual Environment
+venv/
+
+# Python compiled files
+*.pyc
+__pycache__/
+
+# Logs
+*.log
+
+# CSV files
+*.csv
+
+# OS generated files
+.DS_Store
+Thumbs.db
