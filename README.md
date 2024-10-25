@@ -162,3 +162,6 @@ To install dependencies manually, you can run:
 pip install textblob nltk
 ```
 
+The tech stack includes:
+
+Python, TextBlob, NLTK, VADER, Git, GitHub, Virtual Environment (venv), Logging Module, CSV, Visual Studio Code
