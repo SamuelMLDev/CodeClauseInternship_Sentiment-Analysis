@@ -138,4 +138,113 @@ To install dependencies manually, you can run:
 pip install textblob nltk
 ```
 
+## Usage
 
+After completing the installation steps, you can run the Drone AI Autonomous Navigation System to start the drone's autonomous navigation. Follow the instructions below to ensure the system operates correctly.
+
+### 1. Ensure the Virtual Environment is Activated
+
+Before running the application, make sure your virtual environment is activated. This ensures that all dependencies are correctly loaded.
+
+- **Windows:**
+
+  ```bash
+  venv\Scripts\activate
+  ```
+
+- **macOS/Linux:**
+
+  ```bash
+  source venv/bin/activate
+  ```
+
+> **Note:** Your terminal prompt should start with `(venv)` indicating that the virtual environment is active.
+
+### 2. Run the Application
+
+Execute the main application script to start the autonomous navigation system.
+
+```bash
+python src/main.py
+```
+
+- **What Happens Next:**
+  - A window titled **"Drone AI - Object Detection, SLAM, and Rule-Based Navigation"** will open, displaying the live feed from your webcam.
+  - The system will begin processing the video feed to detect objects and update the drone's position using SLAM.
+
+### 3. Interacting with the Application
+
+#### A. Object Detection
+
+- **Visual Indicators:**
+  - Detected objects such as people, cars, or bicycles will be highlighted with bounding boxes and labeled accordingly.
+  - **Faces:** Highlighted with green rectangles.
+  - **Other Objects:** Highlighted with blue bounding boxes and labels.
+
+#### B. SLAM (Simultaneous Localization and Mapping)
+
+- **Pose Updates:**
+  - The system calculates the drone's current position relative to the target destination.
+  - Console logs will display the drone's pose, e.g., `Pose: [x, y, z]`.
+
+- **Map Visualization:**
+  - Upon exiting the application, a window titled **"Drone AI - Map"** will display accumulated map points representing the drone's movement.
+
+#### C. Rule-Based Navigation
+
+- **Action Display:**
+  - The chosen navigation action (e.g., "Move Forward," "Turn Right," "Stop") will be overlaid on the video feed.
+  - Corresponding action messages will be printed in the terminal.
+
+- **Decision Logic:**
+  - **No Obstacles Detected & Far from Target:** Action is "Move Forward."
+  - **Obstacle Detected:** Action is "Turn Right" to avoid collision.
+  - **Near Target:** Action is "Stop" upon reaching the destination.
+
+### 4. Controls
+
+- **Exit the Application:**
+  - Press the `q` key in the video window to terminate the application gracefully.
+
+
+### 5. Troubleshooting
+
+If you encounter issues while running the application, consider the following troubleshooting steps:
+
+#### A. No Video Stream
+
+- **Check Webcam Connection:**
+  - Ensure your webcam is properly connected and not being used by another application.
+  
+- **Verify Video Source:**
+  - If you're using an external camera, ensure it's selected correctly in the code (currently set to `0` for the default webcam).
+  
+- **Error Messages:**
+  - Look for any error messages in the terminal that might indicate issues with video capture.
+
+#### B. Objects Not Detected
+
+- **Lighting Conditions:**
+  - Ensure adequate lighting for the camera to capture clear images.
+  
+- **Model Accuracy:**
+  - Verify that the YOLOv5 model is correctly loaded and functioning.
+  
+- **Test with Clear Objects:**
+  - Use high-contrast objects to see if detection improves.
+
+#### C. Pose Not Updating
+
+- **SLAM Module Issues:**
+  - Ensure that the SLAM module is correctly implemented and receiving input from the video frames.
+  
+- **Console Logs:**
+  - Look for any errors or warnings related to SLAM in the terminal.
+
+#### D. Actions Not Displaying Correctly
+
+- **Rule Logic:**
+  - Double-check the rule-based decision-making logic in your `main.py` to ensure it's correctly interpreting the state and making appropriate decisions.
+  
+- **Console vs. Video Feed:**
+  - Ensure that both the console and video overlay are correctly linked to the action outputs.
