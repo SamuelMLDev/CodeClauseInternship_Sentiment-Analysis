@@ -21,7 +21,6 @@ Welcome to the **Sentiment Analysis Tool**! This Python-based application allows
 - **Error Handling:** Gracefully handles unexpected inputs and errors.
   
 
-> *Note: Add a GIF or screenshot of your tool in action inside a `demo` folder for visual reference.*
 
 ## Installation
 
